@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" th:fragment="header">
+      <div class="container">
+        <div class="navbar-header">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">All Ninjas</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="/squad" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    The Squad
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/squad#oath">Oath</a>
+                    <a class="dropdown-item" href="/squad#application">Application</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/squad#hall">Hall of Ninjas</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/dev">Development</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/devops">DevOps</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/cloud">Cloud</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
