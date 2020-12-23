@@ -71,9 +71,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](http://smartbrains.io)
+http://smartbrains.io
 
-Smart Brains is a collection of best practices, recipes, tools and accelerators used by technology ninjas.
+SmartBrains.io is a collection of best practices, recipes, tools and accelerators used by technology ninjas.
 
 ### Built With
 
