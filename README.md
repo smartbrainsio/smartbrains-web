@@ -30,7 +30,7 @@
     <a href="https://github.com/jhurff/smartbrains-web"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="http://smartbrains.com">View Site</a>
+    <a href="http://smartbrains.io">View Site</a>
     ·
     <a href="https://github.com/jhurff/smartbrains-web/issues">Report Bug</a>
     ·
@@ -71,9 +71,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](http://smartbrains.io)
+http://smartbrains.io
 
-Smart Brains is a collection of best practices, recipes, tools and accelerators used by technology ninjas.
+SmartBrains.io is a collection of best practices, recipes, tools and accelerators used by technology ninjas.
 
 ### Built With
 
