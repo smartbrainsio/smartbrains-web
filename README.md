@@ -30,7 +30,7 @@
     <a href="https://github.com/jhurff/smartbrains-web"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="http://smartbrains.com">View Site</a>
+    <a href="http://smartbrains.io">View Site</a>
     ·
     <a href="https://github.com/jhurff/smartbrains-web/issues">Report Bug</a>
     ·
