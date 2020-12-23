@@ -22,10 +22,10 @@
     <img src="https://raw.githubusercontent.com/jhurff/smartbrains-web/develop/src/main/resources/static/img/logo.png" alt="All Ninja Logo">
   </a>
 
-  <h3 align="center">All Ninjas</h3>
+  <h3 align="center">Smartbrains.io</h3>
 
   <p align="center">
-    The website for All Ninjas
+    The website for Smart Brains
     <br />
     <a href="https://github.com/jhurff/smartbrains-web"><strong>Explore the docs »</strong></a>
     <br />
