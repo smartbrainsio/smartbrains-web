@@ -1,4 +1,0 @@
-com/smartbrains/servingwebcontent/ServingWebContentApplicationTest.java
- com.smartbrains.servingwebcontent.ServingWebContentApplicationTest
-com/smartbrains/servingwebcontent/HomeControllerServingWebContentApplicationTest.java
- com.smartbrains.servingwebcontent.HomeControllerServingWebContentApplicationTest
