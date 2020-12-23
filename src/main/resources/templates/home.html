@@ -7,13 +7,116 @@
 </head>
 <body>
     <div th:replace="fragments/header :: header"/>
-    <div style="text-align: center">
-    <h1>SmartBrains.io Home</h1>
-    <p>Get your special greeting <a href="/greeting">here</a></p>
+
+    <div class="container-fluid" id="main">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-md-3 col-lg-2 sidebar-offcanvas bg-light pl-0" id="sidebar" role="navigation">
+                <ul class="nav flex-column sticky-top pl-0 pt-5 mt-3">
+                    <li class="nav-item"><a class="nav-link" href="/">Overview</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Reports▾</a>
+                        <ul class="list-unstyled flex-column pl-3 collapse" id="submenu1" aria-expanded="false">
+                           <li class="nav-item"><a class="nav-link" href="">Tech Debt Score</a></li>
+                           <li class="nav-item"><a class="nav-link" href="">CI/CD Reports</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
+                </ul>
+            </div>
+            <!--/col-->
+    
+            <div class="col main pt-5 mt-3">
+                <h1 class="display-4 d-none d-sm-block">
+                SmartBrains.io Dashboard
+                </h1>
+                <p class="lead d-none d-sm-block">Overview of the SmartBrains.io community</p>
+    
+                <div class="alert alert-warning fade collapse" role="alert" id="myAlert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <strong>Holy guacamole!</strong> It's free.. this is an example theme.
+                </div>
+                <div class="row mb-3">
+                    <div class="col-xl-3 col-sm-6 py-2">
+                        <div class="card bg-success text-white h-100">
+                            <div class="card-body bg-success">
+                                <div class="rotate">
+                                    <i class="fa fa-user fa-4x"></i>
+                                </div>
+                                <h6 class="text-uppercase">Users</h6>
+                                <h1 class="display-4">1</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 py-2">
+                        <div class="card text-white bg-danger h-100">
+                            <div class="card-body bg-danger">
+                                <div class="rotate">
+                                    <i class="fa fa-list fa-4x"></i>
+                                </div>
+                                <h6 class="text-uppercase">Projects</h6>
+                                <h1 class="display-4">2</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 py-2">
+                        <div class="card text-white bg-info h-100">
+                            <div class="card-body bg-info">
+                                <div class="rotate">
+                                    <i class="fa fa-twitter fa-4x"></i>
+                                </div>
+                                <h6 class="text-uppercase">Tweets</h6>
+                                <h1 class="display-4">1</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 py-2">
+                        <div class="card text-white bg-warning h-100">
+                            <div class="card-body">
+                                <div class="rotate">
+                                    <i class="fa fa-share fa-4x"></i>
+                                </div>
+                                <h6 class="text-uppercase">Shares</h6>
+                                <h1 class="display-4">1</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/row-->
+    
+                <hr>
+                <div class="row placeholders mb-3">
+                    <div class="col-6 col-sm-3 placeholder text-center">
+                        <img src="//placehold.it/200/dddddd/fff?text=1" class="mx-auto img-fluid rounded-circle" alt="For Devs">
+                        <h4>For Devs</h4>
+                        <span class="text-muted">Developer Tools</span>
+                    </div>
+                    <div class="col-6 col-sm-3 placeholder text-center">
+                        <img src="//placehold.it/200/e4e4e4/fff?text=2" class="mx-auto img-fluid rounded-circle" alt="For DevOps">
+                        <h4>For DevOps</h4>
+                        <span class="text-muted">DevOps Tools</span>
+                    </div>
+                    <div class="col-6 col-sm-3 placeholder text-center">
+                        <img src="//placehold.it/200/d6d6d6/fff?text=3" class="mx-auto img-fluid rounded-circle" alt="For SecOps">
+                        <h4>For SecOps</h4>
+                        <span class="text-muted">SecOps Tools</span>
+                    </div>
+                    <div class="col-6 col-sm-3 placeholder text-center">
+                        <img src="//placehold.it/200/e0e0e0/fff?text=4" class="center-block img-fluid rounded-circle" alt="For Cloud">
+                        <h4>For Cloud</h4>
+                        <span class="text-muted">Cloud Management Tools</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div th:replace="fragments/footer :: footer">
-    <hr>
-    Brought to you by <a href="http://jimmyhurff.com">Jimmy Hurff</a>
+
+    <div th:replace="fragments/footer :: footer"/>
+
     <script src="/jquery/3.5.1/jquery.min.js"></script>
     <script src="/bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
 </body>
