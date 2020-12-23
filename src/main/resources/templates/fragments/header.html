@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,36 +6,41 @@
     <div class="navbar navbar-inverse navbar-fixed-top" th:fragment="header">
       <div class="container">
         <div class="navbar-header">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="/">SmartBrains.io</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="/squad" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    The Squad
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/squad#oath">Oath</a>
-                    <a class="dropdown-item" href="/squad#application">Application</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/squad#hall">Hall of Ninjas</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/dev">Development</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/devops">DevOps</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/cloud">Cloud</a>
-                </li>
-              </ul>
+          <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary mb-3">
+            <div class="flex-row d-flex">
+                <button type="button" class="navbar-toggler mr-2 " data-toggle="offcanvas" title="Toggle responsive left sidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="/" title="SmartBrains.io Home">SmartBrains.io</a>
             </div>
-          </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapsingNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/dev">Dev</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/devops">DevOps</a>
+                </li>
+              <li class="nav-item">
+                        <a class="nav-link" href="/cloud">Cloud</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/status" data-toggle="collapse">Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about" data-target="#myModal" data-toggle="modal">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         </div>
       </div>
     </div>
